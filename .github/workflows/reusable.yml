@@ -10,4 +10,4 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: Say hello
-          run: echo "Hello ${{ inputs.username }}'
+          run: echo "Hello ${{ inputs.username }}"
