@@ -1,0 +1,13 @@
+name: Self Healing Deployment
+on:
+  push:
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy Application
+        run: |
+          echo "Starting deployment..."
+          echo "Deploying version 2.0..."
+          echo "Deployment failed!"
+          exit 1
