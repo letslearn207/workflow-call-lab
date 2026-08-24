@@ -1,0 +1,12 @@
+name: Dynamic configuration demo
+
+on: push
+
+jobs:
+  demo:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: create version
+        run: echo 'MY_VERSION=v2.0.0' >> $GITHUB_ENV
+      - name: Use Version
+        run: echo 'The Version is $MY_VERSION'
