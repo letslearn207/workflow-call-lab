@@ -11,3 +11,12 @@ jobs:
           echo "Deploying version 2.0..."
           echo "Deployment failed!"
           exit 1
+      - name: Automatically Rollback
+        if: failure()
+        run: |
+            echo "Deployment failed"
+            echo " Start rollback"
+            echo "rollback done"
+           
+            
+            
