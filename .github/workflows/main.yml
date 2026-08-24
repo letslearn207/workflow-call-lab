@@ -1,0 +1,8 @@
+name: Main workflow
+on:
+  push:
+jobs:
+  call-resuable-workflow:
+      uses: ./.github/worksflows/reusable.yml
+      with:
+          username: "Akshat"
