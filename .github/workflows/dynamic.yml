@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: create version
-        run: echo 'MY_VERSION=v2.0.0' >> $GITHUB_ENV
+        run: echo "MY_VERSION=v2.0.0" >> $GITHUB_ENV
       - name: Use Version
-        run: echo 'The Version is $MY_VERSION'
+        run: echo "The Version is $MY_VERSION"
