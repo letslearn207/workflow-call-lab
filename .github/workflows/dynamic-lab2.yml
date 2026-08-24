@@ -7,7 +7,8 @@ jobs:
     steps:
       - name: Generate version
         run: |
-          DYNAMIC_VERSION="v2.0.${{ github.run_number }}"
+          VERSION_NUMBER = $(( 5 + ${{ github.run_number }}))
+          DYNAMIC_VERSION="v2.0.$VERSION_NUMBER
           echo "MY_VERSIONS=$DYNAMIC_VERSION" >> $GITHUB_ENV
       - name: Display version
         run: echo " Deployed version is $MY_VERSIONS"
