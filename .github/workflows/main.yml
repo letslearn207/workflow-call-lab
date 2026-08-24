@@ -3,6 +3,6 @@ on:
   push:
 jobs:
   call-resuable-workflow:
-      uses: ./.github/worksflows/reusable.yml
+      uses: ./.github/worflows/reusable.yml
       with:
           username: "Akshat"
